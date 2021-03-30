@@ -1,0 +1,14 @@
+package com.company;
+import java.util.Scanner;
+
+public class KiloToMiles {
+    public static void main(String[] args) {
+        System.out.println("Kilometers to Miles Program!");
+        Scanner k= new Scanner(System.in);
+        System.out.println("Enter the km: ");
+        double a = k.nextDouble();
+
+        double kilo= a * 0.0621371;
+        System.out.println("Kilometers to Miles is: "+ kilo);
+    }
+}
