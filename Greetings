@@ -1,0 +1,11 @@
+package com.company;
+import java.util.Scanner;
+
+public class Greetings {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String a = S.next();
+        System.out.println("Hello" + " " + a + " " + "Have a good day!");
+    }
+}
