@@ -1,0 +1,11 @@
+package com.company;
+
+public class StringSample {
+    public static void main(String[] args) {
+        String s = new String("Suvedhini");
+        System.out.println(s);
+
+        String name = "Reddy";
+        System.out.println(name);
+    }
+}
