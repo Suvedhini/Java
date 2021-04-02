@@ -1,0 +1,27 @@
+package com.company;
+
+public class StringQuiz {
+    public static void main(String[] args) {
+        //Program to convert to Lowercase
+        String name = "JAVA";
+        System.out.println(name.toLowerCase());
+
+        //Program to replace whitespaces with underscores
+        String s = "I am Suvedhini";
+        System.out.println(s.replace(" ","_"));
+
+        //Program to greet
+        String a = "Dear <|name>, Thanks a lot";
+        System.out.println(a.replace("<|name>","Priya"));
+
+        //Program to detect double and triple spaces
+        String b = "My name   is  Suvedhini";
+        System.out.println(b.indexOf("  "));
+        System.out.println(b.indexOf("   "));
+        
+
+        //Program to print format using escape sequence
+        System.out.println("\"Dear Suvedhini, This Java Course is nice. Thanks\"");
+    }
+}
+
