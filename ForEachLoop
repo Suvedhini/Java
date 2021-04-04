@@ -1,0 +1,17 @@
+package com.company;
+
+public class ForEachLoop {
+    public static void main(String[] args) {
+        int [] arr = new int[5];
+        arr[0]=67;
+        arr[1]=88;
+        arr[2]=77;
+        arr[3]=99;
+        arr[4]=34;
+
+        for (int element: arr)
+        {
+            System.out.println(element);
+        }
+    }
+}
