@@ -1,0 +1,18 @@
+package com.company;
+import java.util.Scanner;
+
+public class FactorialWhile {
+    public static void main(String[] args) {
+        int i=1;
+        int m=1;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int n = s.nextInt();
+        while(i<=n)
+        {
+            m = m * i;
+            i++;
+        }
+        System.out.println(m);
+    }
+}
