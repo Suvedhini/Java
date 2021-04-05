@@ -1,0 +1,73 @@
+package com.company;
+import java.util.Scanner;
+
+public class AddMatrixUserInput {
+    public static void main(String[] args) {
+        int mat1[][] = new int[5][5];
+        int mat2[][] = new int[5][5];
+        int result[][] = new int[5][5];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no of rows in the 1st matrix: ");
+        int rm1 = sc.nextInt();
+        System.out.println("Enter the no of columns in the 1st matrix: ");
+        int cm1 = sc.nextInt();
+        System.out.println("Enter the no of rows in the 2nd matrix: ");
+        int rm2 = sc.nextInt();
+        System.out.println("Enter the no of columns in the 1st matrix: ");
+        int cm2 = sc.nextInt();
+        System.out.println("Enter the elements of the 1st matrix: ");
+        for (int i=0;i<rm1;i++)
+        {
+            for (int j=0;j<cm2;j++)
+            {
+                mat1[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter the elements of the 2nd matrix: ");
+        for (int i=0;i<rm2;i++)
+        {
+            for (int j=0;j<cm2;j++)
+            {
+                mat2[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("1st matrix: ");
+        for (int i=0;i<rm1;i++)
+        {
+            for (int j=0;j<cm1;j++)
+            {
+                System.out.print(mat1[i][j]+ "\t");
+            }
+            System.out.println(" ");
+        }
+        System.out.println("2nd matrix: ");
+        for (int i=0;i<rm2;i++)
+        {
+            for (int j=0;j<cm2;j++)
+            {
+                System.out.print(mat2[i][j]+"\t");
+            }
+            System.out.println(" ");
+        }
+        for (int i=0;i<rm1;i++)
+        {
+            for (int j=0;j<cm2;j++)
+            {
+                for (int k=0;k<cm1;k++)
+                {
+                    result[i][j] = mat1[i][j]+mat2[i][j];
+                }
+            }
+        }
+        System.out.println("Matrix after Addition :");
+        for (int i=0;i<rm1;i++)
+        {
+            for (int j=0;j<cm2;j++)
+            {
+                System.out.print(result[i][j]+ " ");
+            }
+            System.out.println(" ");
+        }
+
+    }
+}
