@@ -1,0 +1,20 @@
+package com.company;
+import java.util.Scanner;
+
+public class AverageArray {
+    public static void main(String[] args) {
+        int sum = 0;
+        int [] arr = new int[100];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array size: ");
+        int max = sc.nextInt();
+
+        System.out.println("Enter array elements: ");
+        for (int i=0;i<max;i++)
+        {
+            arr[i] = sc.nextInt();
+            sum = sum + arr[i];
+        }
+        System.out.println("Average is :" + sum/max);
+    }
+}
