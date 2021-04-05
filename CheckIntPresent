@@ -1,0 +1,39 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class CheckIntPresent {
+    public static void main(String[] args) {
+        float [] arr = new float[100];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array size: ");
+        float max = sc.nextFloat();
+
+        System.out.println("Enter the array elements: ");
+        for (int i=0;i<max;i++)
+        {
+            arr[i] = sc.nextFloat();
+        }
+        System.out.println("Enter the value you want to check in the array: ");
+        float n = sc.nextFloat();
+
+        boolean isArray = false;
+        for (int i=0;i<max;i++)
+        {
+            if (arr[i]==n)
+            {
+                isArray = true;
+                break;
+            }
+        }
+        if (isArray)
+        {
+            System.out.println("Value is present in the array");
+        }
+        else
+        {
+            System.out.println("Value is not present in the array");
+        }
+        
+    }
+}
