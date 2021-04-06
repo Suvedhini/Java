@@ -1,0 +1,33 @@
+package com.company;
+import java.util.Scanner;
+
+public class Reverse {
+    public static void main(String[] args) {
+        int[] arr = new int[100];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array size: ");
+        int max = sc.nextInt();
+        int n = Math.floorDiv(max, 2);
+        System.out.println("Enter the array elements");
+        for (int i = 0; i < max; i++) {
+
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Entered Array is: ");
+        for (int i = 0; i < max; i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+        System.out.println();
+        System.out.println("Reversing the array: ");
+
+        for (int i = 0; i < n; i++) {
+            int temp = arr[i];
+            arr[i] = arr[max - i - 1];
+            arr[max - i - 1] = temp;
+        }
+        for (int i = 0; i < max; i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
