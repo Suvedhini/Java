@@ -1,0 +1,18 @@
+package com.company;
+
+public class VarArgs {
+    static int sum(int... arr)
+    {
+        int result=0;
+        for (int element:arr) {
+            result += element;
+        }
+        return result;
+    }
+    public static void main(String[] args) {
+        System.out.println(sum());
+        System.out.println(sum(1,2));
+        System.out.println(sum(1,6,8));
+        System.out.println(sum(88,88,99,44));
+    }
+}
