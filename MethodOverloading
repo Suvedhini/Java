@@ -1,0 +1,22 @@
+package com.company;
+
+public class MethodOverloading {
+    static void greet()
+    {
+        System.out.println("Good Morning: ");
+    }
+    static void greet(int a)
+    {
+        System.out.println("Good morning "+ a );
+    }
+    static void greet(int a, int b)
+    {
+        System.out.println("Good morning "+ a + " " + b);
+    }
+
+    public static void main(String[] args) {
+        greet();
+        greet(300);
+        greet(400,500);
+    }
+}
