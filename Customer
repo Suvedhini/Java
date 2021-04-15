@@ -1,0 +1,26 @@
+package com.company;
+
+class Employee1{
+    int salary;
+    String name;
+
+    public int getSalary(){
+        return salary;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String n){
+        name = n;
+    }
+}
+public class Customer {
+    public static void main(String[] args) {
+        Employee1 emp = new Employee1();
+        emp.setName("Suvedhini");
+        emp.salary = 155;
+        System.out.println(emp.salary);
+        System.out.println(emp.getName());
+    }
+}
+ 
