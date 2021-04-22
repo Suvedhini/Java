@@ -1,0 +1,20 @@
+package com.company;
+class Programming
+{
+    void lang()
+    {
+        System.out.println("This is a Programming language!");
+    }
+}
+class Java extends Programming{
+    void lang()
+    {
+        System.out.println("This is a Java Programming language");
+    }
+}
+public class MethodOverriding {
+    public static void main(String[] args) {
+        Java obj = new Java();
+        obj.lang();
+    }
+}
