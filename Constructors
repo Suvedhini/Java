@@ -1,0 +1,32 @@
+package com.company;
+
+public class Constructors {
+    String name;
+    String first;
+    int second,a=5,b=10;
+    Constructors()
+    {
+        name = "Java Program";
+    }
+    Constructors(String name,int no)
+    {
+        System.out.println("Parameterized Constructor is called!");
+        first = name;
+        second = no;
+        System.out.println("Name is :"+ first +"No is :"+second);
+
+    }
+    public static void main(String[] args) {
+        Constructors obj = new Constructors();
+        System.out.println("Non Parameterized Constructor is called!");
+        System.out.println("This is a "+obj.name);
+        System.out.println("----------------------------------------");
+        Constructors obj1 = new Constructors("Suvedhini" +"\n",1602);
+        System.out.println("----------------------------------------");
+        Constructors obj3 = new Constructors();
+        System.out.println("Default Constructor is called!");
+        System.out.println("a= "+obj3.a);
+        System.out.println("b= "+obj3.b);
+        System.out.println("-----------------------------------------");
+    }
+}
