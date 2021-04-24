@@ -1,0 +1,33 @@
+package com.company;
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        int first,second;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first value: ");
+        first = sc.nextInt();
+        System.out.println("Enter the second value: ");
+        second = sc.nextInt();
+        System.out.println("Enter the operation you want to perform: ");
+        System.out.println("1.Addition"+"\n"+"2.Subtraction"+"\n"+"3.Division"+"\n"+"4.Multiplication");
+        int ch = sc.nextInt();
+        switch(ch)
+        {
+            case 1 :
+                System.out.println("Addition of two numbers is :"+ (first+second));
+                break;
+            case 2 :
+                System.out.println("Subtraction of two numbers: "+(first-second));
+                break;
+                case 3:
+                    System.out.println("Division of two numbers is :"+(first/second));
+                    break;
+            case 4:
+                System.out.println("Multiplication of two numbers is :"+(first*second));
+                break;
+            default:
+                System.out.println("Invalid option!");
+        }
+    }
+}
