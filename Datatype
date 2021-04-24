@@ -1,0 +1,10 @@
+package com.company;
+
+public class Datatype {
+    public static void main(String[] args) {
+        int x = 5;
+        double y = 1.6;
+        char z = 'a';
+        System.out.println("Int is :"+x+"\n"+"Double is :"+y+"\n"+"Char is :"+z);
+    }
+}
