@@ -1,0 +1,22 @@
+package com.company;
+class Student
+{
+    int reg_no;
+    String name;
+    void printDetails()
+    {
+        System.out.println("My reg_no is :"+reg_no);
+        System.out.println("My name is :"+name);
+    }
+}
+public class CustomJavaClass {
+    public static void main(String[] args) {
+        System.out.println("Hello This is a Custom Class!!");
+        Student s1=new Student();
+        s1.reg_no=1602;
+        s1.name="Suvedhini";
+//        System.out.println(s1.reg_no);
+//        System.out.println(s1.name);
+        s1.printDetails();
+    }
+}
