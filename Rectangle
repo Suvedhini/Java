@@ -1,0 +1,24 @@
+package com.company;
+class classRectangle{
+    int l,b,x,y;
+    int perimeter;
+    int area(int l,int b)
+    {
+        int a;
+        a=l*b;
+        return a;
+    }
+    int perimeter(int x,int y)
+    {
+        int p;
+        p=2*(x+y);
+        return p;
+    }
+}
+public class Rectangle {
+    public static void main(String[] args) {
+        classRectangle r1=new classRectangle();
+        System.out.println("Area of Rectangle is "+r1.area(10,20));
+        System.out.println("Perimeter of Rectangle is "+r1.perimeter(2,4));
+    }
+}
