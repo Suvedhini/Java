@@ -1,0 +1,23 @@
+package com.company;
+class A{    
+    A()
+    {
+        System.out.println("I am default constructor");
+    }
+    A(int a)
+    {
+        System.out.println("I am constructor with value :"+a);
+    }
+}
+class B extends A{
+    B()
+    {
+        super(10);
+        System.out.println("I am derived constructor ");
+    }
+}
+public class Overloaded_Constructor {
+    public static void main(String[] args) {
+        B b= new B();
+    }
+}
