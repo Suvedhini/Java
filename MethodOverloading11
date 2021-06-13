@@ -1,0 +1,20 @@
+package com.company;
+class Apple{
+    public void method1()
+    {
+        System.out.println("I am method of class A");
+    }
+}
+class Banana extends Apple{
+    @Override
+    public void method1()
+    {
+        System.out.println("I am method of class B");
+    }
+}
+public class MethodOverriding11 {
+    public static void main(String[] args) {
+        Apple ob1 = new Apple();
+        ob1.method1();
+    }
+}
