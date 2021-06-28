@@ -1,0 +1,21 @@
+package com.company;
+abstract class Parent{
+    public void Parent()
+    {
+        System.out.println("I am Parent Class Constructor");
+    }
+    abstract public void greet();
+}
+class Child extends Parent{
+    public void greet()
+    {
+        System.out.println("Good Evening! ");
+    }
+}
+public class AbstractClass {
+    public static void main(String[] args) {
+        Child ob = new Child();
+        ob.greet();
+    }
+}
+
